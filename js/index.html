@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>切水果</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #333;
+		}
+		canvas{
+			position: relative;
+			left: 50%;
+			top: 50px;
+			margin-left: -320px;
+			background: url(images/background.jpg) 0 0 no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<audio src="sound/menu.mp3" id="menu" autoplay loop></audio>
+	<audio src="sound/start.mp3" id="start"></audio>
+	<audio src="sound/throw.mp3" id="throw"></audio>
+	<audio src="sound/splatter.mp3" id="splatter"></audio>
+	<audio src="sound/boom.mp3" id="boom"></audio>
+	<audio src="sound/over.mp3" id="over"></audio>
+	<canvas id="canvas" width="640" height="480"></canvas>
+	<script src="js/game.js"></script>	
+	<script src="js/knife.js"></script>	
+	<script src="js/fruit.js"></script>	
+	<script src="js/boom.js"></script>	
+	<script src="js/fruitcut.js"></script>	
+	<script src="js/scene.js"></script>	
+	<script>
+		var game = new Game();
+	</script>
+</body>
+</html>
